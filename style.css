@@ -1,0 +1,145 @@
+ /* :root{
+    --primary-color:rgb(121, 158, 255);
+    --secondary-color:rgba(254, 255, 196, 0.508);
+    --border-color:rgb(255, 221, 99);
+    --txt-color:rgb(255, 188, 76);
+} */
+ :root{
+    --primary-color:#1E201E;
+    --secondary-color:rgb(60, 61, 55);
+    --border-color:#697565;
+    --txt-color:#ECDFCC;
+}
+ *{
+     margin: 0;
+     padding: 0;
+ }
+html,body{
+    background-color: var(--primary-color);
+    color: var(--txt-color);
+    box-sizing: border-box;
+    height: 100%;
+} 
+
+.setimg{
+ background-image: url();
+    background-size: cover;
+     min-height: 100vh;
+    /* opacity: 0.7; */
+}
+.search-box{
+    margin: 15px auto;
+    border: 2px solid var(--border-color);
+    width: 65%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    padding: 1.2rem;
+    border-radius: 0 70px ;
+}
+h1{
+    color: rgba(255, 0, 0, 0.81);
+    font-weight: bolder;
+    box-shadow: 12px 15px 10px rgba(0, 0, 0, 0.618);
+}
+.search-bar{
+    background-color: var(--secondary-color);
+    width: 65%;  
+}
+.search-bar > i{
+    position: absolute;
+    top: 45px;
+    left: 57%;
+    color: green;
+}
+button{
+    height: 22px;
+    padding-bottom: 25px;
+    line-height: normal;
+    background-color: var(--border-color);
+    border-radius: 0 15px;
+    border: 1px solid var(--border-color);
+    width: 85px;
+}
+#search{
+    height: 35px;
+    width: 95%;
+    border-radius: 60px;
+    border: 1px solid var(--border-color);
+    padding: 0.7rem;
+}
+#search:focus{
+    outline: none;
+    border: 3px solid greenyellow;
+    box-shadow: 5px 4px 10px greenyellow;
+
+}
+
+.result{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+   
+   
+}
+
+.other-details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+@media (max-width:825px) {
+    .other-details{
+        flex-wrap: wrap;
+        width: 37%;
+        height: 150px;
+    }
+    .setimg{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    }
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    background-image: url(assets/sun2.webp);
+    background-size: cover;
+    padding: 10px;
+    /* opacity: 0.6; */
+     background-color: transparent;
+}
+.temp, .humidity, .wind{
+    background-color: rgba(60, 61, 55, 0.53);
+    color: var(--txt-color);
+    height: 80%;
+    width: 200px;
+    transition: ease-in 0.5s;
+    opacity: 0.8;
+}
+.temp:hover, .humidity:hover, .wind:hover{
+    transform: scale(1.05);
+    box-shadow: 12px 15px 10px rgba(0, 0, 0, 0.618);
+    opacity: 1;
+}
+.card-body > p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.btn2{
+    color: var(--txt-color);
+    cursor: auto;
+}
+
+.hidden{
+    display: none;
+}
